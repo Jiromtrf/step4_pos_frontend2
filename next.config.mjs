@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     // スタンドアロンモードを有効化して、必要最低限のファイルのみをデプロイ
-    output: 'standalone'
+    output: 'standalone',
 
     // 環境変数の設定
     env: {
