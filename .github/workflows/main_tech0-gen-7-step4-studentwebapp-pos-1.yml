@@ -24,11 +24,11 @@ jobs:
       # 環境変数を設定する
       - name: Set environment variables
         run: |
-          echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_API_BASE_URL=${{ secrets.NEXT_PUBLIC_API_BASE_URL }}" >> $GITHUB_ENV
 
       - name: npm install, build, and test
         env:
-          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }} # GitHub Secretsから環境変数を渡す
+          NEXT_PUBLIC_API_BASE_URL: ${{ secrets.NEXT_PUBLIC_API_BASE_URL }} # GitHub Secretsから環境変数を渡す
         run: |
           npm install
           npm run build --if-present

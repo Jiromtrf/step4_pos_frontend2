@@ -5,7 +5,7 @@ const nextConfig = {
 
     // 環境変数の設定
     env: {
-        NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL, // Azureで設定されたAPI URLを使用
+        NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL, // Azureで設定されたAPI URLを使用
     },
 };
 
